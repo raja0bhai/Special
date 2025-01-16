@@ -1,68 +1,185 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans:500,700&display=swap');
+
 *{
+
   margin: 0;
+
   padding: 0;
+
   box-sizing: border-box;
-}
-body{
-  height: 100vh;
- /* background-image: url('photo3.jpg');
-  background-size: cover;*/
-  background: linear-gradient(to left top, #F0F0D7 0%, #daa0a0 90%);
-}
-.split-card{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 340px;
-  width: 290px;
-  transform: translate(-50%, -50%);
-}
-.split-card .cards{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 11px;
-  box-shadow: 1px 2px 3px rgba(0,0,0,.1);
-  transition: all 0.4s cubic-bezier(.63,.15,.03,1.12);
-}
-.split-card .cards img {
-  height: auto;
-  width: 100%;
-  cursor: pointer;
-  transition: all .4s;
-}
-.split-card .card-1{
-  z-index: 3;
-  transform: rotateZ(-2deg);
-}
-.split-card .card-2{
-  z-index: 2;
-  transform: rotateZ(-7deg);
-  /* transition-delay: 0.6s; */
-  transition-delay: 0.06s;
-}
-.split-card .card-3{
-  z-index: 1;
-  transform: rotateZ(5deg);
-  /* transition-delay: 0s; */
-  transition-delay: 0.1s;
-}
-input{
-  display: none;
-}
-input:checked ~ .split-card .card-1{
-  transform: translateX(-115%) rotateZ(0deg);
-}
-input:checked ~ .split-card .card-2{
-  transform: translateX(115%) rotateZ(0deg);
-}
-input:checked ~ .split-card .card-3{
-  transform: translateX(0%) rotateZ(0deg);
-  /* transition-delay: 0.6s; */
-}
-/*input:checked ~ .split-card img:hover{
-  transform: scale(1.2);
+
 }
 
+body{
+
+  height: 100vh;
+
+ /* background-image: url('photo3.jpg');
+
+  background-size: cover;*/
+
+  background: linear-gradient(to left top, #F0F0D7 0%, #daa0a0 90%);
+
+}
+
+.split-card{
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  height: 340px;
+
+  width: 290px;
+
+  transform: translate(-50%, -50%);
+
+}
+
+.split-card .cards{
+
+  position: absolute;
+
+  height: 100%;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  border-radius: 11px;
+
+  box-shadow: 1px 2px 3px rgba(0,0,0,.1);
+
+  transition: all 0.4s cubic-bezier(.63,.15,.03,1.12);
+
+}
+
+.split-card .cards img {
+
+  height: auto;
+
+  width: 100%;
+
+  cursor: pointer;
+
+  transition: all .4s;
+
+}
+
+.split-card .card-1{
+  z-index: 3;
+
+  transform: rotateZ(-2deg);
+
+}
+
+.split-card .card-2{
+
+  z-index: 2;
+
+  transform: rotateZ(-7deg);
+
+  /* transition-delay: 0.6s; */
+
+  transition-delay: 0.06s;
+
+}
+
+.split-card .card-3{
+
+  z-index: 1;
+
+  transform: rotateZ(5deg);
+
+  /* transition-delay: 0s; */
+
+  transition-delay: 0.1s;
+
+}
+
+input{
+
+  display: none;
+
+}
+
+input:checked ~ .split-card .card-1{
+
+  transform: translateX(-115%) rotateZ(0deg);
+
+}
+
+input:checked ~ .split-card .card-2{
+
+  transform: translateX(115%) rotateZ(0deg);
+
+}
+
+input:checked ~ .split-card .card-3{
+
+  transform: translateX(0%) rotateZ(0deg);
+
+  /* transition-delay: 0.6s; */
+
+}
+
+/*input:checked ~ .split-card img:hover{
+
+  transform: scale(1.2);
+
+}
+*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to left top, #F0F0D7 0%, #daa0a0 90%);
+
+}
+
+.snowfall {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-repeat: repeat;
+    z-index: 1000000;
+    pointer-events: none;
+    -moz-animation: snow_animation 10s linear infinite;
+    -webkit-animation: snow_animation 10s linear infinite;
+    animation: snow_animation 10s linear infinite;
+}
+
+@-moz-keyframes snow_animation {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+    100% {
+        background-position: 500px 3000px, 0 400px, 0 300px;
+    }
+}
+@-webkit-keyframes snow_animation {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+    100% {
+        background-position: 500px 3000px, 0 400px, 0 300px;
+    }
+}
+@keyframes snow_animation {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+    100% {
+        background-position: 500px 3000px, 0 400px, 0 300px;
+    }
+}
