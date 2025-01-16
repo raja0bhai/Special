@@ -8,7 +8,7 @@ body{
   height: 100vh;
  /* background-image: url('photo3.jpg');
   background-size: cover;*/
-  background: linear-gradient(to left top, #54ffa1 0%, #daa0a0 100%);
+  background: linear-gradient(to left top, #F0F0D7 0%, #daa0a0 90%);
 }
 .split-card{
   position: absolute;
